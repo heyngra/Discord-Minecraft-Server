@@ -5,7 +5,7 @@ Download the latest version from [releases] and run the installpackages.py file.
 
 
 
-##How to collect data
+## How to collect data
 
 1. To get token go to [discord.com/developers](https://discord.com/developers/applications). Create new application, then bot in it. Copy the token and insert.
 2. To get the channelID you need to enable the developer mode, then click on channel and copy the ID and insert.
