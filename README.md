@@ -12,3 +12,6 @@ Download the latest version from [releases] and run the installpackages.py file.
 3. To get messageID you need to make the same what you did in 2. but you need to get the ID of an message that will be send by running the bot without it.
 4. To get the IP you just write the IP of an server you connect it. F.E. hypixel.net
 <p align="center"> <img src="DeveloperMode.PNG"> </p>
+
+## License
+App above uses MIT License.
