@@ -1,7 +1,7 @@
 # Discord-Minecraft-Server
 With it you can make your own autoupdating message with stats on your Discord Server!
 ## Setup
-Download the latest version from [releases] and run the installpackages.py file. Then open run.py file and wait until it closes. Do not care about the errors. Open the config file and insert here your data, except of messageID, you will collect it later. How to get your data will be down below. You need to run it again and the test message will appear. Close application and fill last place with messageID with ID of message sent. Now it should work.
+Download the latest version from [releases] and run the installpackages.py file. Then open run.py file and wait until it closes. Do not care about the errors. Open the config file and insert here your data, except of messageID, you will collect it later. How to get your data will be down below. You need to run it again and the test message will appear. Close application and fill last place messageID with ID of message sent. Now it should work. If you something goes wrong and application would crash you should try open the app via cmd.exe and if there are any errors report them on the github.
 
 
 
