@@ -10,6 +10,8 @@ from datetime import datetime
 import asyncio
 client = discord.Client()
 #--------
+#--------
+#Config
 if os.path.isfile("config.yml") == False:
     print("Creating config file in your file location!")
     cfg = open("config.yml", 'w')
@@ -29,8 +31,8 @@ elif os.path.isfile("config.yml") == True:
         channelID = cfg["ChannelID"]
         messageID = cfg["MessageID"]
         serverIP = cfg["IP"]
-
-
+#--------
+#Discord Bot
 @client.event
 async def on_ready():
     print("Bot should be running great!")
@@ -80,4 +82,5 @@ async def check_server():
 
 
 client.run(token)
+#---------
 time.sleep(2)
