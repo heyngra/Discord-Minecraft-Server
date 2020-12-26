@@ -10,7 +10,6 @@ from datetime import datetime
 import asyncio
 client = discord.Client()
 #--------
-#--------
 #Config
 if os.path.isfile("config.yml") == False:
     print("Creating config file in your file location!")
