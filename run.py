@@ -2,13 +2,25 @@
 #Packages and Variables
 import time
 import os
-from mcstatus import MinecraftServer
-import discord
-from discord.ext import tasks, commands
-import yaml
-from datetime import datetime
-import asyncio
 import secrets
+try:
+    from mcstatus import MinecraftServer
+    import discord
+    from discord.ext import tasks, commands
+    import yaml
+    from datetime import datetime
+    import asyncio
+except ModuleNotFoundError:
+    if os.path.isfile("installpackages.py") == True:
+        if os.name == "nt":
+            os.system("installpackages.py")
+        else:
+            os.system("python3 installpackages.py")
+        print("Zainstalowano nową wersję")
+        time.sleep(2)
+        exit()
+    else:
+        print("Jesteś pewien, że pobrałeś najnowszą wersję programu?")
 client = discord.Client()
 #--------
 #Config
