@@ -33,15 +33,7 @@ if os.path.isfile("config.yml") == False:
     time.sleep(3)
     exit()
 elif os.path.isfile("config.yml") == True:
-    global token
-    global ChannelID
-    global MessageID
-    global ServerIP
-    global ServerStatus
-    global IsOnline
-    global PlayerAmount
-    global Players
-    global LastUpdated
+    global token, ChannelID, MessageID, ServerIP, ServerStatus, IsOnlline, PlayerAmount, Players, LastUpdated
     with open("config.yml", "r") as ymlfile:
         cfg = yaml.safe_load(ymlfile)
         token = cfg["token"]
