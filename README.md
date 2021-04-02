@@ -40,7 +40,7 @@ Please, be patient.
 If you want to help in creating this application, thats cool!
 Github Web | Github Desktop
 -|-
-Click edit on file you want to contribute. | Go to main page and click **Clone** button, then click **Open in Github Desktop** |
+Click edit on file you want to contribute. | Go to main page and click **green Code** button, then click **Open in Github Desktop** |
 | Add edits and click create new branch | Mark you want to make changes to parent repository. | 
 | | Open the file in normal editor then proceed to make changes  |
 | Every click of **commit changes** after editing will create commit. Name it shortly, but recognizable. | After **all** changes create commit. Name it shortly, but recognizable. |
