@@ -1,5 +1,6 @@
 #--------
 #Packages and Variables
+from datetime import datetime
 import time
 import os
 import secrets
@@ -8,7 +9,6 @@ try:
     import discord
     from discord.ext import tasks, commands
     import yaml
-    from datetime import datetime
     import asyncio
 except ModuleNotFoundError:
     if os.path.isfile("installpackages.py") == True:
@@ -16,11 +16,11 @@ except ModuleNotFoundError:
             os.system("installpackages.py")
         else:
             os.system("python3 installpackages.py")
-        print("Zainstalowano nową wersję")
+        print("Downloaded the latest version.")
         time.sleep(2)
         exit()
     else:
-        print("Jesteś pewien, że pobrałeś najnowszą wersję programu?")
+        print("Are you sure you downloaded the latest version?")
 client = discord.Client()
 #--------
 #Config
@@ -70,10 +70,8 @@ async def check_server():
         message = await channel.fetch_message(messageID)
         try:
             globals()["status_%s" % randomcode] = server.status()
-        except Exception as e:
+        except:
             pass
-            #print(e) #Remove comment if you want to check logs
-        #work
         if "status_%s" % randomcode in globals():
             if globals()["status_%s" % randomcode].players.online <= 10:
                 try:
